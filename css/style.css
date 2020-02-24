@@ -1,0 +1,59 @@
+.accordion .btnAccord {
+  width: 100%;
+  padding: 15px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion .panel {
+  border: 1px solid #af314a;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.accordion .panel.active {
+  display: block;
+}
+
+.tabMenu {
+  margin-top: 20px;
+}
+
+.tabMenu .btnTab {
+  padding: 15px 25px;
+  background-color: goldenrod;
+  color: honeydew;
+  font-size: 1.2em;
+}
+
+.tabMenu .alltabpanel {
+  position: relative;
+}
+
+.tabMenu .alltabpanel .tabpanel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid goldenrod;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  margin-top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+.tabMenu .alltabpanel .tabpanel.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+/*# sourceMappingURL=style.css.map */

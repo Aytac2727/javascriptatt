@@ -1,0 +1,52 @@
+.accordion {
+    .btnAccord {
+        width: 100%;
+        padding: 15px;
+        background-color: crimson;
+        color: white;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .panel {
+        border: 1px solid rgb(175, 49, 74);
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+        margin-bottom: 10px;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.tabMenu {
+    margin-top:20px;
+    .btnTab{
+        padding: 15px 25px;
+        background-color: goldenrod;
+        color: honeydew;
+        font-size: 1.2em;
+    }
+.alltabpanel {position: relative;
+    .tabpanel {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 1px solid goldenrod;
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+        margin-top: 15px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+        transform: translateY(25px);
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+        }
+
+    }
+}
+}
